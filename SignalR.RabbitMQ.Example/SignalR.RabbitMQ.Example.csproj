@@ -29,6 +29,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -274,6 +275,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SignalR.MongoRabbit\SignalR.MongoRabbit.csproj">
+      <Project>{89023c68-6065-4425-8881-0c059b179941}</Project>
+      <Name>SignalR.MongoRabbit</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SignalR.RabbitMQ\SignalR.RabbitMQ.csproj">
       <Project>{8051D7BF-5DF2-409E-997F-A5B772F3E417}</Project>
       <Name>SignalR.RabbitMQ</Name>
